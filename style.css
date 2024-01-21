@@ -1,0 +1,13 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: aqua;
+    color: rgb(129, 129, 6);
+}
+
+button:hover {
+    background-color: rgb(7, 136, 136);
+}
