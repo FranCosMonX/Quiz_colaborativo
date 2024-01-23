@@ -1,3 +1,3 @@
 function mensagem() {
-    alert("Scripy funcionando!");
+    alert("Scripy funcionando 2!");
 }
