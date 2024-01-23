@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Titillium Web", Helvetica;
+}
+
+body { 
+    overflow-x: hidden; 
+    overflow-y: hidden;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+
+:root {
+    --azulEscuro: #0968EC;
+    --azulClaro:#E0F4FE;
+    --verdeEscuro:#D8E7CB;
+    --verdeClaro:#E6F6D5;
+    --rosaEscuro:#EEA3A4;
+    --rosaClaro:#FEDCDF;
+    --cinza:#EAEAF0;
+    --branco:#ffff;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    width: 702px;
+    height: 440px;
+    border: 1px solid var(--cinza);
+    box-shadow: 0px 4px 68px #00000040;
+}
