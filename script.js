@@ -102,6 +102,7 @@ function configuracao_inicial() {
     perguntas_e_respostas();
     gerar_ordem_das_perguntas();
     sessionStorage.setItem('indices', JSON.stringify(indices));
+    sessionStorage.setItem('pontos', 0);
 }
 
 configuracao_inicial();

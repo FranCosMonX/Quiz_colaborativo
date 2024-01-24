@@ -1,2 +1,16 @@
-alert(sessionStorage.getItem(8));
-alert(JSON.parse(sessionStorage.getItem("indices")));
+function teste(e) {
+    var id = e.id;
+
+    var elemento = document.getElementById(id);
+    var valor = elemento.getAttribute("value");
+    if (valor === 'true') {
+        let pontos = parseInt(sessionStorage.getItem('pontos'));
+        pontos = pontos + 1;
+        sessionStorage.setItem('pontos', pontos)
+        elemento.style.backgroundColor = "green";
+    } else {
+        elemento.style.backgroundColor = "red";
+    }
+
+    console.log(sessionStorage.getItem('pontos'));
+}

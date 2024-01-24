@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
+    <script src="../script.js"></script>
     <title>Pagina da Questão 4</title>
 </head>
+
 <body>
     <main>
         <section class="tela">
@@ -15,10 +18,18 @@
                 <h3>O que é a Via Láctea ?</h3>
             </div>
             <div class="alternativas">
-                <div class="resposta"><p>Marca de Leite</p></div>
-                <div class="resposta"><p>Civilização antiga</p></div>
-                <div class="resposta"><p>Marca de carro</p></div>
-                <div class="resposta"><p>Galáxia</p></div>
+                <div class="resposta" id="r1" value="false" onclick="teste(this)">
+                    <p>Marca de Leite</p>
+                </div>
+                <div class="resposta" id="r2" value="false" onclick="teste(this)">
+                    <p>Civilização antiga</p>
+                </div>
+                <div class="resposta" id="r3" value="false" onclick="teste(this)">
+                    <p>Marca de carro</p>
+                </div>
+                <div class="resposta" id="r4" value="true" onclick="teste(this)">
+                    <p>Galáxia</p>
+                </div>
             </div>
             <div class="btn">
                 <button>
@@ -26,9 +37,10 @@
                     <a href="../Question5/index.html">Next</a>
                 </button>
             </div>
-           
+
         </section>
     </main>
-    
+
 </body>
+
 </html>

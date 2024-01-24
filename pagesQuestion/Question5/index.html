@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
+    <script src="../script.js"></script>
     <title>Pagina da Questão 5</title>
 </head>
+
 <body>
     <main>
         <section class="tela">
@@ -15,10 +18,18 @@
                 <h3>Que personagem da turma do Chaves vive cobrando o aluguel do Seu Madruga ?</h3>
             </div>
             <div class="alternativas">
-                <div class="resposta"><p>Kiko</p></div>
-                <div class="resposta"><p>Chaves</p></div>
-                <div class="resposta"><p>Seu Barriga</p></div>
-                <div class="resposta"><p>Professor Girafales</p></div>
+                <div class="resposta" id="r1" value="false" onclick="teste(this)">
+                    <p>Kiko</p>
+                </div>
+                <div class="resposta" id="r2" value="false" onclick="teste(this)">
+                    <p>Chaves</p>
+                </div>
+                <div class="resposta" id="r3" value="true" onclick="teste(this)">
+                    <p>Seu Barriga</p>
+                </div>
+                <div class="resposta" id="r4" value="false" onclick="teste(this)">
+                    <p>Professor Girafales</p>
+                </div>
             </div>
             <div class="btn">
                 <button>
@@ -26,9 +37,10 @@
                     <a href="../Question6/index.html">Next</a>
                 </button>
             </div>
-           
+
         </section>
     </main>
-    
+
 </body>
+
 </html>

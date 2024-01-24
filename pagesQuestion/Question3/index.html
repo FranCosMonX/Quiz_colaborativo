@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
+    <script src="../script.js"></script>
     <title>Pagina da Questão 3</title>
 </head>
+
 <body>
     <main>
         <section class="tela">
@@ -15,10 +18,18 @@
                 <h3>Quantas folhas tem um trevo da sorte ?</h3>
             </div>
             <div class="alternativas">
-                <div class="resposta"><p>Três</p></div>
-                <div class="resposta"><p>Quatro</p></div>
-                <div class="resposta"><p>Cinco</p></div>
-                <div class="resposta"><p>Seis</p></div>
+                <div class="resposta" id="r1" value="false" onclick="teste(this)">
+                    <p>Três</p>
+                </div>
+                <div class="resposta" id="r2" value="true" onclick="teste(this)">
+                    <p>Quatro</p>
+                </div>
+                <div class="resposta" id="r3" value="false" onclick="teste(this)">
+                    <p>Cinco</p>
+                </div>
+                <div class="resposta" id="r4" value="false" onclick="teste(this)">
+                    <p>Seis</p>
+                </div>
             </div>
             <div class="btn">
                 <button>
@@ -26,9 +37,10 @@
                     <a href="../Question4/index.html">Next</a>
                 </button>
             </div>
-           
+
         </section>
     </main>
-    
+
 </body>
+
 </html>
