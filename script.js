@@ -1,10 +1,10 @@
 let vetor= [];
-let n;
+
 function chamar(){
-   return ordem();
-   
+    window.location= ordem();   
     
 }
+
 function  gOrdemQuestoesAleatorio(){
     let n1 = parseInt(Math.random() *10 +1 ); 
     return n1; 
@@ -13,7 +13,7 @@ function  gOrdemQuestoesAleatorio(){
 function receberOrdemQuestoesValidacao(){
     let n2 = gOrdemQuestoesAleatorio();
     if(vetor.includes(n2)){
-        chamar()
+        return 0;
     }
     else{
         vetor.push(n2);
@@ -23,41 +23,46 @@ function receberOrdemQuestoesValidacao(){
 
 }
 function ordem(){
-     n =0;
+     let n =0;
      n = receberOrdemQuestoesValidacao();
 
+    if( n == 0){
+        chamar();
+     }
+
     if(n == 1){
-        return window.location.href="pagesQuestion/Question1/index.html"
+        return "Question1.html"
     }
     else if(n ==2){
-        return window.location.href="pagesQuestion/Question2/index.html"
+        return "Question2.html"
     }
     else if(n ==3){
-        return window.location.href="pagesQuestion/Question3/index.html"
+        return "Question3.html"
     }
     else if(n ==4){
-        return window.location.href="pagesQuestion/Question4/index.html"
+        return "Question4.html"
     }
     else if(n ==5){
-        return window.location.href="pagesQuestion/Question5/index.html"
+        return "Question5.html"
     }
     else if(n ==6){
-        return window.location.href="pagesQuestion/Question6/index.html"
+        return "Question6.html"
     }
     else if(n ==7){
-        return window.location.href="pagesQuestion/Question7/index.html"
+        return "/Question7.html"
     }
     else if(n ==8){
-        return window.location.href="pagesQuestion/Question8/index.html"
+        return "Question8.html"
     }
     else if(n ==9){
-        return window.location.href="pagesQuestion/Question9/index.html"
+        return "Question9.html"
     }
     else if(n ==10){
-        return window.location.href="pagesQuestion/Question10/index.html"
+        return "Question10.html"
     }
     else{
-        return window.location.href="paginaFinal/index.html"
+        return "paginaFinal/index.html"
         
     }
 }
+
