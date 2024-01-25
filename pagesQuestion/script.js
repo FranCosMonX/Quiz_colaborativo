@@ -14,7 +14,3 @@ function teste(e) {
 
     console.log(sessionStorage.getItem('pontos'));
 }
-function exibir(tag,texto){
-    let titulo = document.querySelector(tag);
-    titulo.innerHTML = texto;
-}
