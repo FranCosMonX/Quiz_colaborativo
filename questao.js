@@ -83,7 +83,7 @@ export default [
   {
     questao: "<br>Quantos centavos tem um real ?",
     respostas: [
-      { option: "a) 10", correct: false },
+      { option: "a) 100", correct: false },
       { option: "b) 60", correct: false },
       { option: "c) 50", correct: false },
       { option: "d) 100", correct: true },
